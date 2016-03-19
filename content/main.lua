@@ -67,7 +67,7 @@ local Justice = lukkit.addPlugin("Justice", "v1.0-alpha",
                     sender:sendMessage(s[2].."2. Don't post each letter of a word as single messages")
                     sender:sendMessage(s[2].."3. Don't post each word of a sentence as single messages")
                     sender:sendMessage(s[2].."4. Don't post random letters or words in chat")
-                    sender:sendMessage(s[2].."5. Use British English in global and ally chat")
+                    sender:sendMessage(s[2].."5. Use English only when speaking in global and ally chat")
                     sender:sendMessage(s[2].."6. All languages are allowed in faction and public chat")
                     sender:sendMessage(s[2].."7. Don't advertise anything outside the game without consent")
                     sender:sendMessage(s[2].."Type "..s[3].."/rules cheating"..s[2].." for the next rule")
