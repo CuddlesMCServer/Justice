@@ -251,7 +251,7 @@ local Justice = lukkit.addPlugin("Justice", "v1.0-alpha",
             end
             if type(obj.queued) == "number" then
                 plugin.config.set(uuid..".queued", obj.queued)
-            else
+            elseif
                 plugin.config.clear(uuid..".queued")
             end
             plugin.config.save()
@@ -264,7 +264,11 @@ local Justice = lukkit.addPlugin("Justice", "v1.0-alpha",
                     if args[1] then
                         local offline = server:getOfflinePlayer(args[1])
                         if offline:isOnline() then
-                            
+                            local data = load_player( offline:getName() )
+                            if args[2] then
+                            else
+                                sender:sendMessage(s[1].."Error: "..s[2].."/punish {name} {reason}")
+                            end
                         elseif offline:hasPlayedBefore() then
                             
                         else
